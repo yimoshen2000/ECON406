@@ -70,9 +70,10 @@ tuples = list(Accounts.items())
 print(tuples)
 
 # Problem 7
-# Lists, dictionaries and sets are all iterables that allow is to store data in them.
+# Lists, dictionaries and sets are all iterables that allow us to store data in them.
 # Lists and sets are similar in that they are both mutable. The difference between
 # them is that lists allow for duplicates and consist of ordered collection of data
 # while sets don't allow duplicates and consist of unordered collection of data.
 # Dictionaries are similar with sets in that they also store unordered data, but the
-# main difference compared to sets is that they store data in key-value pairs.
+# main difference compared to sets is that they store data in key-value pairs while
+# lists store data using indices.
