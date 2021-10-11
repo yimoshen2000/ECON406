@@ -1,0 +1,2 @@
+# ECON406
+ECON 406 Fall 2021
