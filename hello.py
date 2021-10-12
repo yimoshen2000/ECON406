@@ -15,7 +15,7 @@ desired_rate = float(input("Enter your annual interest rate: "))
 def total_wealth(principle, interest_rate, duration):
     """
     Takes principle, annual interest rate and duration,
-    returns eventual amount of wealth.
+    returns eventual amount of wealth after compound interest.
     """
     return principle * (1 + float(interest_rate)) ** duration
 
