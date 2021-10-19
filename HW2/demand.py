@@ -35,7 +35,7 @@ def compute_demand(sales: float, init_price: float, new_price: float, elasticity
     price, a new price, and an elasticity and calculates the
     predicted demand at the new price.
     """
-    predicted_demand = sales * math.exp(elasticity) * new_price / init_price
+    predicted_demand = sales * (new_price / init_price)**elasticity
     return predicted_demand
 
 
