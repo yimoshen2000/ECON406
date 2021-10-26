@@ -21,15 +21,11 @@ def generate_matrix(rows: int, cols: int):
 
 def matrix_multiplication_loop(x_matrix:np.ndarray, y_matrix:np.ndarray):
     """Multiplies matrix x and matrix y using a nested for-loop."""
-    if (x_matrix.shape[1] != y_matrix.shape[0]):
-        print("Matrix dimensions don't match!")
-        exit()
-    else:
-        result = np.zeros((x_matrix.shape[0],y_matrix.shape[1]))
-        for i in range(x_matrix.shape[0]):
-            for j in range(y_matrix.shape[1]):
-                result[i,j]=np.dot(x_matrix[i,:],y_matrix[:,j])
-        return result
+    result = np.zeros((x_matrix.shape[0],y_matrix.shape[1]))
+    for i in range(x_matrix.shape[0]):
+        for j in range(y_matrix.shape[1]):
+            result[i,j]=np.dot(x_matrix[i,:],y_matrix[:,j])
+    return result
 
 
 # mat_100_1 = generate_matrix(100,100)
@@ -46,6 +42,7 @@ def timed_multiplication_loop(x_matrix:np.ndarray, y_matrix:np.ndarray):
     result = matrix_multiplication_loop(x_matrix, y_matrix)
     time = timeit.timeit(lambda: result, number = 1)
     return result, time
+
 
 def timed_multiplication_numpy(x_matrix:np.ndarray, y_matrix:np.ndarray):
     """
