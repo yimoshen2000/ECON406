@@ -1,2 +1,2 @@
 # ECON406
-ECON 406 Fall 2021
+UW ECON 406 Data Science Computing for Economics Seminar; Python, SQL
